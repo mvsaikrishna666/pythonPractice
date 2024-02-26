@@ -111,4 +111,67 @@ def pattern14(n):
             print(chr(65 + j),end="")
         print('\n')
 
-pattern14(5)
+# pattern14(5)
+        
+def pattern17(n):
+    for i in range(0, n):
+        print('*' * (n-i), end='')
+        for j in range(0,i):
+            print(chr(65 + j), end='')
+        for k in range(i, -1, -1):
+            print(chr(65 + k), end='')
+        print('*' * (n-i), end='')            
+        print('\n')
+
+# pattern17(4)
+
+def pattern18(n):
+    for i in range(1, n+1):
+        for j in range(i, 0, -1):
+            print(chr(65 + (n-j)), end=' ')
+        print('\n')
+
+# pattern18(5)
+
+def pattern19(n):
+    for i in range(n, 0, -1):
+        print (i * '*', end='')
+        print (' ' * 2 * (n-i), end='')
+        print (i * '*', end='')
+        print('\n')
+    for j in range(1, n+1):
+        print (j * '*', end='')
+        print (' ' * 2 * (n-j), end='')
+        print (j * '*', end='')
+        print('\n')
+
+# pattern19(6)
+        
+def pattern20(n):
+    for i in range(1, n+1):
+        print('*' * i, end='')
+        print(2 * ' ' * (n-i), end='')
+        print('*' * i, end='')
+        print('\n')
+    for j in range(n-1, 0, -1):
+        print('*' * j, end='')
+        print(2 * ' ' * (n-j), end='')
+        print('*' * j, end='')
+        print('\n')
+
+# pattern20(6)
+
+def pattern21(n):
+    for i in range(1, n+1):
+        if i == 1:
+            print ('*' * n)
+        elif i == n:
+            print ('*' * n)
+        else:
+            print('*', end='')
+            print((n-2) * ' ', end='')
+            print('*')
+# pattern21(9)
+
+
+
