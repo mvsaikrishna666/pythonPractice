@@ -173,5 +173,21 @@ def pattern21(n):
             print('*')
 # pattern21(9)
 
-
-
+def pattern22(n):
+    for i in range(n, 0, -1):
+        for j in range(n, i-1, -1):
+            print(j, end='')
+        # print('\n', i, j, '\n')
+        print (str(j) * ((2*i)-2), end='' )
+        for k in range(i, n+1):
+            print(k, end='')
+        print('\n')
+    for a in range (1, n):
+        for b in range(n, a, -1):
+            print(b, end='')
+        print (str(b) * ((2*a)-2), end='' )
+        # for c in range(a, n+1):
+        #     print(c, end='')
+        print('\n')
+        
+pattern22(6)
